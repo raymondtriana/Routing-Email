@@ -2,9 +2,9 @@
 An Email automation tool to notify hundreds of recipients each day based upon pdf files.
 
 # Requirements
-Python 3.10.11 or greater
-PyPDF2
-pywin32
+    -Python 3.10.11 or greater
+    -PyPDF2
+    -pywin32
 
 # Order of execution
     -loop through each pdf in the ./pdf folder
