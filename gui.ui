@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Toplevel" id="mainwindow" named="True">
+    <property name="height">400</property>
+    <property name="minsize">400|400</property>
+    <property name="width">400</property>
+    <child>
+      <object class="ttk.Notebook" id="notebook2">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="pack">
+          <property name="anchor">nw</property>
+          <property name="expand">true</property>
+          <property name="fill">both</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Notebook.Tab" id="tab3">
+            <property name="state">normal</property>
+            <property name="text" translatable="yes">Splitter</property>
+            <child>
+              <object class="ttk.Frame" id="frame6">
+                <property name="height">200</property>
+                <property name="width">200</property>
+                <layout manager="pack">
+                  <property name="expand">false</property>
+                  <property name="fill">both</property>
+                  <property name="side">top</property>
+                </layout>
+                <child>
+                  <object class="ttk.Frame" id="frame8">
+                    <property name="height">200</property>
+                    <property name="width">200</property>
+                    <layout manager="pack">
+                      <property name="expand">true</property>
+                      <property name="fill">x</property>
+                      <property name="side">top</property>
+                    </layout>
+                    <child>
+                      <object class="ttk.Label" id="splitter_label" named="True">
+                        <property name="relief">groove</property>
+                        <property name="text" translatable="yes">Defined the path to the compiled PDF file.</property>
+                        <property name="textvariable">string:labelName</property>
+                        <layout manager="pack">
+                          <property name="side">top</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="pygubu.builder.widgets.pathchooserinput" id="splitter_path" named="True">
+                        <property name="mustexist">true</property>
+                        <property name="textvariable">string:pdf_file_path</property>
+                        <property name="type">file</property>
+                        <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_pdf_path_changed" add="" />
+                        <layout manager="pack">
+                          <property name="fill">x</property>
+                          <property name="side">top</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Separator" id="separator2">
+                    <property name="orient">horizontal</property>
+                    <layout manager="pack">
+                      <property name="fill">x</property>
+                      <property name="side">top</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Button" id="splitter_button" named="True">
+                    <property name="text" translatable="yes">Split PDF</property>
+                    <property name="width">100</property>
+                    <layout manager="pack">
+                      <property name="expand">false</property>
+                      <property name="side">top</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Notebook.Tab" id="tab4">
+            <property name="text" translatable="yes">Email</property>
+            <child>
+              <object class="ttk.Frame" id="frame7">
+                <property name="height">200</property>
+                <property name="width">200</property>
+                <layout manager="pack">
+                  <property name="anchor">nw</property>
+                  <property name="expand">true</property>
+                  <property name="fill">both</property>
+                  <property name="side">top</property>
+                </layout>
+                <containerlayout manager="pack">
+                  <property name="anchor">nw</property>
+                </containerlayout>
+                <child>
+                  <object class="pygubu.builder.widgets.scrolledframe" id="email_scrolledFrame" named="True">
+                    <property name="borderwidth">11</property>
+                    <property name="scrolltype">both</property>
+                    <property name="usemousewheel">true</property>
+                    <property name="width">200</property>
+                    <layout manager="pack">
+                      <property name="anchor">nw</property>
+                      <property name="expand">true</property>
+                      <property name="fill">both</property>
+                      <property name="side">top</property>
+                    </layout>
+                    <child>
+                      <object class="ttk.Checkbutton" id="checkbutton11">
+                        <property name="text" translatable="yes">checkbutton1</property>
+                        <layout manager="pack">
+                          <property name="anchor">nw</property>
+                          <property name="fill">x</property>
+                          <property name="side">top</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="ttk.Checkbutton" id="checkbutton12">
+                        <property name="text" translatable="yes">checkbutton1</property>
+                        <layout manager="pack">
+                          <property name="anchor">nw</property>
+                          <property name="fill">x</property>
+                          <property name="side">top</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="ttk.Checkbutton" id="checkbutton13">
+                        <property name="text" translatable="yes">checkbutton1</property>
+                        <layout manager="pack">
+                          <property name="anchor">nw</property>
+                          <property name="fill">x</property>
+                          <property name="side">top</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="ttk.Checkbutton" id="checkbutton14">
+                        <property name="text" translatable="yes">checkbutton1</property>
+                        <layout manager="pack">
+                          <property name="anchor">nw</property>
+                          <property name="fill">x</property>
+                          <property name="side">top</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="ttk.Checkbutton" id="checkbutton15">
+                        <property name="text" translatable="yes">checkbutton1</property>
+                        <layout manager="pack">
+                          <property name="anchor">nw</property>
+                          <property name="fill">x</property>
+                          <property name="side">top</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="ttk.Checkbutton" id="checkbutton16">
+                        <property name="text" translatable="yes">checkbutton1</property>
+                        <layout manager="pack">
+                          <property name="anchor">nw</property>
+                          <property name="fill">x</property>
+                          <property name="side">top</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="ttk.Checkbutton" id="checkbutton17">
+                        <property name="text" translatable="yes">checkbutton1</property>
+                        <layout manager="pack">
+                          <property name="anchor">nw</property>
+                          <property name="fill">x</property>
+                          <property name="side">top</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="ttk.Checkbutton" id="checkbutton18">
+                        <property name="text" translatable="yes">checkbutton1</property>
+                        <layout manager="pack">
+                          <property name="anchor">nw</property>
+                          <property name="fill">x</property>
+                          <property name="side">top</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="ttk.Checkbutton" id="checkbutton19">
+                        <property name="text" translatable="yes">checkbutton1</property>
+                        <layout manager="pack">
+                          <property name="anchor">nw</property>
+                          <property name="fill">x</property>
+                          <property name="side">top</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="ttk.Checkbutton" id="checkbutton20">
+                        <property name="text" translatable="yes">checkbutton1</property>
+                        <layout manager="pack">
+                          <property name="anchor">nw</property>
+                          <property name="fill">x</property>
+                          <property name="side">top</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="ttk.Checkbutton" id="checkbutton21">
+                        <property name="text" translatable="yes">checkbutton1</property>
+                        <layout manager="pack">
+                          <property name="anchor">nw</property>
+                          <property name="fill">x</property>
+                          <property name="side">top</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Separator" id="separator1">
+                    <property name="orient">horizontal</property>
+                    <layout manager="pack">
+                      <property name="fill">x</property>
+                      <property name="side">top</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Button" id="email_button" named="True">
+                    <property name="text" translatable="yes">Email</property>
+                    <property name="width">100</property>
+                    <bind sequence="&lt;ButtonRelease&gt;" handler="email" add="" />
+                    <layout manager="pack">
+                      <property name="expand">false</property>
+                      <property name="side">top</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

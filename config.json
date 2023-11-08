@@ -1,0 +1,10 @@
+{
+    "settings":[
+        {
+            "pdf_dir":"./pdf",
+            "email_list":"./driverEmailList.csv",
+            "cache_dir":"./cache",
+            "mailing_list":"recipient0@email.com;recipient1@email.com;..."
+        }
+    ]
+}
